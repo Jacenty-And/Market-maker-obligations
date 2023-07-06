@@ -32,30 +32,12 @@ def is_delta_ok(timestamp, events):
     return float(last_event["delta"]) <= 0.7
 
 
-# TODO: use min() and max()
 def is_the_spread_ok(orders):
     buy_orders, sell_orders = split_by_direction(orders)
-    max_buy_price, min_sell_price = 0, 0
-    if len(buy_orders) > 0:
-        max_buy_price = sorted(buy_orders, key=lambda order: order["price"], reverse=True)[0]["price"]
-    if len(sell_orders) > 0:
-        min_sell_price = sorted(sell_orders, key=lambda order: order["price"])[0]["price"]
-    if min_sell_price == 0 and max_buy_price == 0:
-        return False
+    max_buy_price = max(buy_orders, key=lambda o: o["price"])["price"] if len(buy_orders) else 0
+    min_sell_price = min(sell_orders, key=lambda o: o["price"])["price"] if len(sell_orders) else 0
     spread = abs(min_sell_price - max_buy_price)
     return spread <= 0.003
-
-# def is_the_spread_ok(orders):
-#     buy_orders, sell_orders = split_by_direction(orders)
-#     max_buy_price, min_sell_price = 0, 0
-#     if len(buy_orders) > 0:
-#         max_buy_price = sorted(buy_orders, key=lambda order: order["price"], reverse=True)[0]["price"]
-#     if len(sell_orders) > 0:
-#         min_sell_price = sorted(sell_orders, key=lambda order: order["price"])[0]["price"]
-#     if min_sell_price == 0 and max_buy_price == 0:
-#         return False
-#     spread = abs(min_sell_price - max_buy_price)
-#     return spread <= 0.003
 
 
 def get_total_time(orders):

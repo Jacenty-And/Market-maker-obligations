@@ -1,0 +1,1610 @@
+[
+  {
+    "timestamp": 1688077800000,
+    "order_id": "1",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.2
+  },
+  {
+    "timestamp": 1688077800000,
+    "order_id": "2",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 4.6
+  },
+  {
+    "timestamp": 1688077800000,
+    "order_id": "3",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688079600000,
+    "order_id": "1",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.2
+  },
+  {
+    "timestamp": 1688079600000,
+    "order_id": "2",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 4.6
+  },
+  {
+    "timestamp": 1688079600000,
+    "order_id": "3",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688081400000,
+    "order_id": "4",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688081400000,
+    "order_id": "5",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 2.2
+  },
+  {
+    "timestamp": 1688083200000,
+    "order_id": "5",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 2.2
+  },
+  {
+    "timestamp": 1688083200000,
+    "order_id": "4",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688083200000,
+    "order_id": "6",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688085000000,
+    "order_id": "7",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 3.6
+  },
+  {
+    "timestamp": 1688086800000,
+    "order_id": "6",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688086800000,
+    "order_id": "7",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 3.6
+  },
+  {
+    "timestamp": 1688086800000,
+    "order_id": "8",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688086800000,
+    "order_id": "9",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.5
+  },
+  {
+    "timestamp": 1688088600000,
+    "order_id": "9",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 5.8
+  },
+  {
+    "timestamp": 1688088600000,
+    "order_id": "10",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688090400000,
+    "order_id": "10",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688092200000,
+    "order_id": "11",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688092200000,
+    "order_id": "12",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 4.8
+  },
+  {
+    "timestamp": 1688092200000,
+    "order_id": "13",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688094000000,
+    "order_id": "9",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.5
+  },
+  {
+    "timestamp": 1688094000000,
+    "order_id": "13",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688094000000,
+    "order_id": "8",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688094000000,
+    "order_id": "12",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 6.699999999999999
+  },
+  {
+    "timestamp": 1688094000000,
+    "order_id": "11",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 4.199999999999999
+  },
+  {
+    "timestamp": 1688094000000,
+    "order_id": "12",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 2.5
+  },
+  {
+    "timestamp": 1688094000000,
+    "order_id": "14",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.9
+  },
+  {
+    "timestamp": 1688095800000,
+    "order_id": "11",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688095800000,
+    "order_id": "14",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.9
+  },
+  {
+    "timestamp": 1688095800000,
+    "order_id": "12",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 4.8
+  },
+  {
+    "timestamp": 1688097600000,
+    "order_id": "10",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 5.9
+  },
+  {
+    "timestamp": 1688099400000,
+    "order_id": "10",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688099400000,
+    "order_id": "15",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 4.5
+  },
+  {
+    "timestamp": 1688099400000,
+    "order_id": "16",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 3.1
+  },
+  {
+    "timestamp": 1688099400000,
+    "order_id": "17",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.4
+  },
+  {
+    "timestamp": 1688101200000,
+    "order_id": "17",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 5.1000000000000005
+  },
+  {
+    "timestamp": 1688101200000,
+    "order_id": "18",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 2.8
+  },
+  {
+    "timestamp": 1688101200000,
+    "order_id": "19",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688101200000,
+    "order_id": "20",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 3.5
+  },
+  {
+    "timestamp": 1688103000000,
+    "order_id": "17",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 2.6000000000000005
+  },
+  {
+    "timestamp": 1688103000000,
+    "order_id": "21",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688104800000,
+    "order_id": "21",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688104800000,
+    "order_id": "19",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688104800000,
+    "order_id": "20",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688104800000,
+    "order_id": "16",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 4.5
+  },
+  {
+    "timestamp": 1688104800000,
+    "order_id": "20",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688104800000,
+    "order_id": "22",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 4.4
+  },
+  {
+    "timestamp": 1688104800000,
+    "order_id": "23",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688106600000,
+    "order_id": "22",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 4.4
+  },
+  {
+    "timestamp": 1688106600000,
+    "order_id": "20",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 3.5
+  },
+  {
+    "timestamp": 1688106600000,
+    "order_id": "16",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 3.1
+  },
+  {
+    "timestamp": 1688106600000,
+    "order_id": "24",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688106600000,
+    "order_id": "25",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688108400000,
+    "order_id": "23",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688108400000,
+    "order_id": "15",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 4.5
+  },
+  {
+    "timestamp": 1688108400000,
+    "order_id": "26",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.7
+  },
+  {
+    "timestamp": 1688108400000,
+    "order_id": "27",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 2.5
+  },
+  {
+    "timestamp": 1688108400000,
+    "order_id": "28",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 2.7
+  },
+  {
+    "timestamp": 1688110200000,
+    "order_id": "26",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.7
+  },
+  {
+    "timestamp": 1688110200000,
+    "order_id": "27",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 1.6
+  },
+  {
+    "timestamp": 1688110200000,
+    "order_id": "27",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 2.9
+  },
+  {
+    "timestamp": 1688110200000,
+    "order_id": "24",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 3.3
+  },
+  {
+    "timestamp": 1688110200000,
+    "order_id": "29",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688112000000,
+    "order_id": "27",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 2.5
+  },
+  {
+    "timestamp": 1688112000000,
+    "order_id": "28",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 2.7
+  },
+  {
+    "timestamp": 1688112000000,
+    "order_id": "30",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 3.4
+  },
+  {
+    "timestamp": 1688112000000,
+    "order_id": "31",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.9
+  },
+  {
+    "timestamp": 1688113800000,
+    "order_id": "17",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.4
+  },
+  {
+    "timestamp": 1688113800000,
+    "order_id": "25",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688113800000,
+    "order_id": "24",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688113800000,
+    "order_id": "32",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 4.7
+  },
+  {
+    "timestamp": 1688113800000,
+    "order_id": "33",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.7
+  },
+  {
+    "timestamp": 1688113800000,
+    "order_id": "34",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.3
+  },
+  {
+    "timestamp": 1688115600000,
+    "order_id": "29",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688115600000,
+    "order_id": "33",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 5.7
+  },
+  {
+    "timestamp": 1688115600000,
+    "order_id": "18",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 3.6999999999999997
+  },
+  {
+    "timestamp": 1688115600000,
+    "order_id": "35",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 3.4
+  },
+  {
+    "timestamp": 1688115600000,
+    "order_id": "36",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 3.5
+  },
+  {
+    "timestamp": 1688115600000,
+    "order_id": "37",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "33",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.7
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "18",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 2.8
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "31",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.9
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "32",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 5.3
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "37",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.3999999999999995
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "36",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.9
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "38",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "39",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688117400000,
+    "order_id": "40",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.4
+  },
+  {
+    "timestamp": 1688119200000,
+    "order_id": "34",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 1.6999999999999997
+  },
+  {
+    "timestamp": 1688119200000,
+    "order_id": "36",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688119200000,
+    "order_id": "41",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.8
+  },
+  {
+    "timestamp": 1688121000000,
+    "order_id": "40",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.4
+  },
+  {
+    "timestamp": 1688121000000,
+    "order_id": "30",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 3.4
+  },
+  {
+    "timestamp": 1688121000000,
+    "order_id": "39",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 7.4
+  },
+  {
+    "timestamp": 1688121000000,
+    "order_id": "32",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 5.1000000000000005
+  },
+  {
+    "timestamp": 1688121000000,
+    "order_id": "35",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 3.3
+  },
+  {
+    "timestamp": 1688122800000,
+    "order_id": "41",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.8
+  },
+  {
+    "timestamp": 1688122800000,
+    "order_id": "32",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 3.5
+  },
+  {
+    "timestamp": 1688122800000,
+    "order_id": "36",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.4
+  },
+  {
+    "timestamp": 1688122800000,
+    "order_id": "36",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.0
+  },
+  {
+    "timestamp": 1688122800000,
+    "order_id": "42",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688124600000,
+    "order_id": "36",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 3.5
+  },
+  {
+    "timestamp": 1688124600000,
+    "order_id": "43",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.4
+  },
+  {
+    "timestamp": 1688124600000,
+    "order_id": "44",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 2.5
+  },
+  {
+    "timestamp": 1688126400000,
+    "order_id": "37",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 5.699999999999999
+  },
+  {
+    "timestamp": 1688126400000,
+    "order_id": "44",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688126400000,
+    "order_id": "35",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.5
+  },
+  {
+    "timestamp": 1688126400000,
+    "order_id": "45",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688128200000,
+    "order_id": "44",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 2.5
+  },
+  {
+    "timestamp": 1688128200000,
+    "order_id": "37",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688128200000,
+    "order_id": "39",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688128200000,
+    "order_id": "42",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 1.9
+  },
+  {
+    "timestamp": 1688130000000,
+    "order_id": "45",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688130000000,
+    "order_id": "35",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 3.4
+  },
+  {
+    "timestamp": 1688130000000,
+    "order_id": "46",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 4.2
+  },
+  {
+    "timestamp": 1688131800000,
+    "order_id": "34",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.0999999999999996
+  },
+  {
+    "timestamp": 1688131800000,
+    "order_id": "38",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688133600000,
+    "order_id": "46",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 4.2
+  },
+  {
+    "timestamp": 1688133600000,
+    "order_id": "34",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.3
+  },
+  {
+    "timestamp": 1688133600000,
+    "order_id": "42",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688133600000,
+    "order_id": "38",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.7
+  },
+  {
+    "timestamp": 1688133600000,
+    "order_id": "47",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688133600000,
+    "order_id": "48",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688133600000,
+    "order_id": "49",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688135400000,
+    "order_id": "47",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688135400000,
+    "order_id": "32",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9975,
+    "amount": 4.7
+  },
+  {
+    "timestamp": 1688135400000,
+    "order_id": "43",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 4.4
+  },
+  {
+    "timestamp": 1688135400000,
+    "order_id": "50",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688135400000,
+    "order_id": "51",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 2.7
+  },
+  {
+    "timestamp": 1688135400000,
+    "order_id": "52",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 2.9
+  },
+  {
+    "timestamp": 1688137200000,
+    "order_id": "52",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 2.9
+  },
+  {
+    "timestamp": 1688137200000,
+    "order_id": "49",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688137200000,
+    "order_id": "48",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688137200000,
+    "order_id": "53",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 3.5
+  },
+  {
+    "timestamp": 1688137200000,
+    "order_id": "54",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688137200000,
+    "order_id": "55",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688139000000,
+    "order_id": "50",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688139000000,
+    "order_id": "55",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.1
+  },
+  {
+    "timestamp": 1688139000000,
+    "order_id": "51",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 2.4000000000000004
+  },
+  {
+    "timestamp": 1688139000000,
+    "order_id": "56",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688139000000,
+    "order_id": "57",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688139000000,
+    "order_id": "58",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688140800000,
+    "order_id": "58",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688140800000,
+    "order_id": "54",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688140800000,
+    "order_id": "38",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 1.9000000000000001
+  },
+  {
+    "timestamp": 1688140800000,
+    "order_id": "48",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 4.3
+  },
+  {
+    "timestamp": 1688142600000,
+    "order_id": "56",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.2
+  },
+  {
+    "timestamp": 1688142600000,
+    "order_id": "51",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 1.8000000000000003
+  },
+  {
+    "timestamp": 1688142600000,
+    "order_id": "59",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 4.0
+  },
+  {
+    "timestamp": 1688144400000,
+    "order_id": "53",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 3.5
+  },
+  {
+    "timestamp": 1688144400000,
+    "order_id": "38",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 4.1000000000000005
+  },
+  {
+    "timestamp": 1688144400000,
+    "order_id": "60",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.9
+  },
+  {
+    "timestamp": 1688144400000,
+    "order_id": "61",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688144400000,
+    "order_id": "62",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 3.9
+  },
+  {
+    "timestamp": 1688146200000,
+    "order_id": "59",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 3.1
+  },
+  {
+    "timestamp": 1688146200000,
+    "order_id": "63",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 3.8
+  },
+  {
+    "timestamp": 1688146200000,
+    "order_id": "64",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688148000000,
+    "order_id": "59",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 4.0
+  },
+  {
+    "timestamp": 1688148000000,
+    "order_id": "60",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 2.0999999999999996
+  },
+  {
+    "timestamp": 1688148000000,
+    "order_id": "64",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 7.2
+  },
+  {
+    "timestamp": 1688148000000,
+    "order_id": "64",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 3.8
+  },
+  {
+    "timestamp": 1688148000000,
+    "order_id": "65",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 4.8
+  },
+  {
+    "timestamp": 1688148000000,
+    "order_id": "66",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 2.5
+  },
+  {
+    "timestamp": 1688149800000,
+    "order_id": "57",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688149800000,
+    "order_id": "61",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688149800000,
+    "order_id": "48",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 4.2
+  },
+  {
+    "timestamp": 1688149800000,
+    "order_id": "67",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688149800000,
+    "order_id": "68",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 2.9
+  },
+  {
+    "timestamp": 1688149800000,
+    "order_id": "69",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 4.0
+  },
+  {
+    "timestamp": 1688151600000,
+    "order_id": "67",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.3
+  },
+  {
+    "timestamp": 1688151600000,
+    "order_id": "68",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 3.4
+  },
+  {
+    "timestamp": 1688151600000,
+    "order_id": "70",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 3.6
+  },
+  {
+    "timestamp": 1688151600000,
+    "order_id": "71",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688153400000,
+    "order_id": "70",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0015,
+    "amount": 3.6
+  },
+  {
+    "timestamp": 1688153400000,
+    "order_id": "62",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0005,
+    "amount": 3.9
+  },
+  {
+    "timestamp": 1688153400000,
+    "order_id": "68",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 2.9
+  },
+  {
+    "timestamp": 1688153400000,
+    "order_id": "48",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 4.4
+  },
+  {
+    "timestamp": 1688153400000,
+    "order_id": "72",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688155200000,
+    "order_id": "64",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688155200000,
+    "order_id": "65",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 4.6
+  },
+  {
+    "timestamp": 1688155200000,
+    "order_id": "66",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 2.0
+  },
+  {
+    "timestamp": 1688155200000,
+    "order_id": "73",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 2.1
+  },
+  {
+    "timestamp": 1688155200000,
+    "order_id": "74",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 2.6
+  },
+  {
+    "timestamp": 1688155200000,
+    "order_id": "75",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.3
+  },
+  {
+    "timestamp": 1688157000000,
+    "order_id": "75",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.3
+  },
+  {
+    "timestamp": 1688157000000,
+    "order_id": "73",
+    "order_state": "closed",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 2.1
+  },
+  {
+    "timestamp": 1688157000000,
+    "order_id": "72",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 3.0
+  },
+  {
+    "timestamp": 1688157000000,
+    "order_id": "51",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 4.0
+  },
+  {
+    "timestamp": 1688157000000,
+    "order_id": "48",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 1.7
+  },
+  {
+    "timestamp": 1688157000000,
+    "order_id": "48",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.9985,
+    "amount": 4.5
+  },
+  {
+    "timestamp": 1688158800000,
+    "order_id": "51",
+    "order_state": "closed",
+    "direction": "buy",
+    "price": 0.9995,
+    "amount": 2.7
+  },
+  {
+    "timestamp": 1688158800000,
+    "order_id": "60",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 3.7
+  },
+  {
+    "timestamp": 1688158800000,
+    "order_id": "65",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.0025,
+    "amount": 4.7
+  },
+  {
+    "timestamp": 1688158800000,
+    "order_id": "76",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 5.0
+  },
+  {
+    "timestamp": 1688160600000,
+    "order_id": "66",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.999,
+    "amount": 2.3
+  },
+  {
+    "timestamp": 1688160600000,
+    "order_id": "71",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.4000000000000004
+  },
+  {
+    "timestamp": 1688160600000,
+    "order_id": "77",
+    "order_state": "open",
+    "direction": "buy",
+    "price": 0.998,
+    "amount": 3.8
+  },
+  {
+    "timestamp": 1688160600000,
+    "order_id": "78",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.001,
+    "amount": 3.9
+  },
+  {
+    "timestamp": 1688160600000,
+    "order_id": "79",
+    "order_state": "open",
+    "direction": "sell",
+    "price": 1.002,
+    "amount": 3.7
+  }
+]

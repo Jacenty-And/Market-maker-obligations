@@ -60,14 +60,21 @@ def is_delta_ok(event):
 def get_total_time(orders):
     start_time = orders[0]["timestamp"]
     end_time = orders[-1]["timestamp"]
-    # print(convert_timestamp(start_time), "-", convert_timestamp(end_time))
     total_time = end_time - start_time
-    # print(total_time, "ms =",
-    #       total_time / 1000, "s =",
-    #       total_time / 1000 / 60, "m =",
-    #       total_time / 1000 / 60 / 60, "h")
-    # print(convert_timestamp(end_time) - convert_timestamp(start_time))
     return total_time
+
+
+def calculate_time(timestamps):
+    time = start = 0
+    for timestamp in timestamps:
+        if timestamp[0] is True and start == 0:
+            start = timestamp[1]
+        if timestamp[0] is False and start > 0:
+            time += timestamp[1] - start
+            start = 0
+    if start > 0:
+        time += timestamps[-1][1] - start
+    return time
 
 
 if __name__ == '__main__':
@@ -75,8 +82,7 @@ if __name__ == '__main__':
     instrument_events = peekable(instrument_events_generator())
     event = next_event = next(instrument_events)
     active = {}
-
-    total_time = get_total_time(list(order_events_generator()))
+    obligations_fulfilled = []
 
     for order in order_events:
         update_active(order, active)
@@ -106,3 +112,13 @@ if __name__ == '__main__':
         print("Amounts: ", is_amounts_ok(active_orders))
         print("Delta: ", is_delta_ok(event))
         print("\n")
+
+        if is_spread_ok(active_orders) and is_amounts_ok(active_orders) and is_delta_ok(event):
+            obligations_fulfilled.append((True, order["timestamp"]))
+        else:
+            obligations_fulfilled.append((False, order["timestamp"]))
+
+    time = calculate_time(obligations_fulfilled)
+    total_time = get_total_time(list(order_events_generator()))
+    percentage = time / total_time
+    print("Market maker is fulfilling his obligations {:.2%} of time".format(percentage))

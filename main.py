@@ -1,5 +1,31 @@
-import datetime
-import json
+from json import load
+from datetime import datetime
+from more_itertools import peekable
+
+
+def order_events_generator():
+    with open("order_events.json", "r") as file:
+        events = load(file)
+    for event in events:
+        yield event
+
+
+def instrument_events_generator():
+    with open("instrument_events.json", "r") as file:
+        events = load(file)
+    for event in events:
+        yield event
+
+
+def update_active(order, active):
+    if order["order_state"] == "open":
+        active[order["order_id"]] = order
+    else:  # order["order_state"] == "closed"
+        active.pop(order["order_id"])
+
+
+def get_active_list(active):
+    return [item[1] for item in active.items()]
 
 
 def split_by_direction(orders):
@@ -8,31 +34,11 @@ def split_by_direction(orders):
     return buy, sell
 
 
-def is_the_amounts_ok(orders):
-    buy_orders, sell_orders = split_by_direction(orders)
-    buy_amount = sum(buy["amount"] for buy in buy_orders)
-    sell_amount = sum(sell["amount"] for sell in sell_orders)
-    return buy_amount >= 5 and sell_amount >= 5
-
-
 def convert_timestamp(timestamp):
-    return datetime.datetime.fromtimestamp(int(timestamp) / 1000.0)
+    return datetime.fromtimestamp(int(timestamp) / 1000.0)
 
 
-# TODO: replace the loop with yield statement
-def is_delta_ok(timestamp, events):
-    last_event = events[0]
-    for event in events[1:]:
-        if int(event["timestamp"]) > timestamp:
-            break
-        last_event = event
-    print(convert_timestamp(last_event["timestamp"]), "-",
-          convert_timestamp(event["timestamp"]),
-          "\nTime:", convert_timestamp(timestamp))
-    return float(last_event["delta"]) <= 0.7
-
-
-def is_the_spread_ok(orders):
+def is_spread_ok(orders):
     buy_orders, sell_orders = split_by_direction(orders)
     max_buy_price = max(buy_orders, key=lambda o: o["price"])["price"] if len(buy_orders) else 0
     min_sell_price = min(sell_orders, key=lambda o: o["price"])["price"] if len(sell_orders) else 0
@@ -40,93 +46,48 @@ def is_the_spread_ok(orders):
     return spread <= 0.003
 
 
-def get_total_time(orders):
-    timestamps = sorted(set(map(lambda order: order["timestamp"], orders)))
-    last_timestamp = timestamps[0]
-    sum = 0
-    for timestamp in timestamps:
-        sum += timestamp - last_timestamp
-    return sum
+def is_amounts_ok(orders):
+    buy_orders, sell_orders = split_by_direction(orders)
+    buy_amount = sum(buy["amount"] for buy in buy_orders)
+    sell_amount = sum(sell["amount"] for sell in sell_orders)
+    return buy_amount >= 5 and sell_amount >= 5
 
 
-def obligations_fulfilled_time(lst):
-    last = lst[0]
-    sum = 0
-    for time in lst[1:]:
-        pass
-        # check if the timestamp is "OK" or "NOT_OK"
-        # calculate time between two "OK" timestamps and between "OK" and "NOT_OK"
-        # time between two "NOT_OK" and "NOT_OK" and "OK" is not summed up
-    return sum
+def is_delta_ok(event):
+    return float(event["delta"]) <= 0.7
 
 
 if __name__ == '__main__':
-    with open("order_events.json", "r") as file:
-        order_events = json.load(file)
-    with open("instrument_events.json", "r") as file:
-        instrument_events = json.load(file)
-
+    order_events = order_events_generator()
+    instrument_events = peekable(instrument_events_generator())
+    event = next_event = next(instrument_events)
     active = {}
+
     for order in order_events:
-        if order["order_state"] == "open":
-            active[order["order_id"]] = order
-        else:  # order["order_state"] == "closed"
-            active.pop(order["order_id"])
+        update_active(order, active)
+
         print("Active:")
-        active_orders = [item[1] for item in active.items()]
+        active_orders = get_active_list(active)
         for act in active_orders:
             print(act)
-        print("Delta: ", is_delta_ok(order["timestamp"], instrument_events))
-        print("Spread: ", is_the_spread_ok(active_orders))
-        print("Amounts: ", is_the_amounts_ok(active_orders))
+
+        # Check instrument_events
+        while order["timestamp"] >= int(next_event["timestamp"]):
+            try:
+                next_event = instrument_events.peek()
+            except StopIteration:
+                next_event = event
+                break
+            if int(next_event["timestamp"]) > order["timestamp"]:
+                break
+            event = next(instrument_events)
+
+        print("Order timestamp: ", convert_timestamp(order["timestamp"]))
+        print("Event timestamp: ", convert_timestamp(event["timestamp"]), "Delta: ", event["delta"])
+        print("Next event timestamp: ", convert_timestamp(next_event["timestamp"]), "Delta: ", next_event["delta"])
+        print("Delta: ", event["delta"])
+
+        print("Spread: ", is_spread_ok(active_orders))
+        print("Amounts: ", is_amounts_ok(active_orders))
+        print("Delta: ", is_delta_ok(event))
         print("\n")
-
-    # by_timestamp = group_by_timestamp(order_events)
-
-    # loop to print values
-    # for in_timestamp in by_timestamp:
-    #     buy_orders, sell_orders = split_by_direction(in_timestamp)
-    #     print(is_the_spread_ok(in_timestamp))
-    #     print(is_the_amounts_ok(in_timestamp))
-    #     print("Buy")
-    #     for order in buy_orders:
-    #         print(order)
-    #     print("Sell")
-    #     for order in sell_orders:
-    #         print(order)
-    #     print("Next timestamp\n")
-    # exit()
-
-    # obligations_fulfilled = []
-    # active = []
-    # for in_timestamp in by_timestamp:
-    #     for order in in_timestamp:
-    #         if order["order_state"] == "open":
-    #             # order already in active
-    #             if order["order_id"] in [order["id"] for order in active]:
-    #                 # update the order
-    #                 pass
-    #             # new order
-    #             else:
-    #                 active.append(order)
-    #                 pass
-    #         else:  # closed
-    #             if order["order_id"] in [order["id"] for order in active]:
-    #                 # remove the order
-    #                 pass
-    #
-    #     # after every timestamp:
-    #     timestamp = in_timestamp[0]["timestamp"]
-    #     # check if sum of amounts for both sides >= 5
-    #     # check if best prices diff <= 0.003
-    #     if is_the_amounts_ok(active) and is_the_spread_ok(active) or not is_delta_ok(timestamp, instrument_events):
-    #         # when delta > 0.7 then time is counted to fulfilled ???
-    #
-    #         # if condition above are satisfied then timestamp can be added
-    #         # to list of fulfilling obligations timestamps
-    #         obligations_fulfilled.append(("OK", timestamp))
-    #     else:
-    #         obligations_fulfilled.append(("NOT_OK", timestamp))
-    #
-    #     # from fulfilling obligations timestamps list the total amount
-    #     # of time can be calculated

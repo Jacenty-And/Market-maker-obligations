@@ -106,7 +106,6 @@ if __name__ == '__main__':
         print("Order timestamp: ", convert_timestamp(order["timestamp"]))
         print("Event timestamp: ", convert_timestamp(event["timestamp"]), "Delta: ", event["delta"])
         print("Next event timestamp: ", convert_timestamp(next_event["timestamp"]), "Delta: ", next_event["delta"])
-        print("Delta: ", event["delta"])
 
         print("Spread: ", is_spread_ok(active_orders))
         print("Amounts: ", is_amounts_ok(active_orders))
@@ -119,6 +118,8 @@ if __name__ == '__main__':
             obligations_fulfilled.append((False, order["timestamp"]))
 
     time = calculate_time(obligations_fulfilled)
+    print("Time: ", time / 1000 / 60 / 60, "h")
     total_time = get_total_time(list(order_events_generator()))
+    print("Total time: ", total_time / 1000 / 60 / 60, "h")
     percentage = time / total_time
     print("Market maker is fulfilling his obligations {:.2%} of time".format(percentage))

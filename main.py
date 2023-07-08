@@ -57,11 +57,26 @@ def is_delta_ok(event):
     return float(event["delta"]) <= 0.7
 
 
+def get_total_time(orders):
+    start_time = orders[0]["timestamp"]
+    end_time = orders[-1]["timestamp"]
+    # print(convert_timestamp(start_time), "-", convert_timestamp(end_time))
+    total_time = end_time - start_time
+    # print(total_time, "ms =",
+    #       total_time / 1000, "s =",
+    #       total_time / 1000 / 60, "m =",
+    #       total_time / 1000 / 60 / 60, "h")
+    # print(convert_timestamp(end_time) - convert_timestamp(start_time))
+    return total_time
+
+
 if __name__ == '__main__':
     order_events = order_events_generator()
     instrument_events = peekable(instrument_events_generator())
     event = next_event = next(instrument_events)
     active = {}
+
+    total_time = get_total_time(list(order_events_generator()))
 
     for order in order_events:
         update_active(order, active)
